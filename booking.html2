@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Consultation – Kadijah’s Mango</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=DM+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'DM Sans', sans-serif;
+      background: linear-gradient(to bottom right, #fffaf7, #fef3e9);
+      color: #1a1a1a;
+    }
+
+    header {
+      background: linear-gradient(to right, #8b0000, #330000);
+      color: white;
+      padding: 50px 20px 30px;
+      text-align: center;
+      position: relative;
+    }
+
+    header img {
+      width: 150px;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin: 10px 0 0;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #f8d7d7;
+      margin-top: 10px;
+    }
+
+    nav {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+    }
+
+    nav a {
+      color: #ffd700;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 50px auto;
+      background: white;
+      border-radius: 20px;
+      padding: 40px 30px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    input, textarea, select {
+      padding: 14px;
+      font-size: 1rem;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      background-color: #8b0000;
+      color: white;
+      border: none;
+      padding: 16px;
+      font-size: 1rem;
+      border-radius: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #a31e1e;
+    }
+
+    .nav-links {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .nav-links a {
+      margin: 0 14px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #8b0000;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px 20px;
+      color: #777;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        position: static;
+        margin-top: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="assets/kadijahs_mango_logo_optimized_transparent.png" alt="Kadijah’s Mango Logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="pricing.html">Packages</a>
+      <a href="booking.html">Book a Call</a>
+    </nav>
+    <h1>Book a Consultation</h1>
+    <p>Let’s take your halal brand to the global market.</p>
+  </header>
+
+  <div class="container">
+    <form name="booking" method="POST" data-netlify="true">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="text" name="phone" placeholder="WhatsApp / Phone Number" required />
+      <select name="interest" required>
+        <option value="">I'm interested in...</option>
+        <option value="Start-Up Mango">Start-Up Mango</option>
+        <option value="Signature Mango">Signature Mango</option>
+        <option value="Premium Mango">Premium Mango</option>
+        <option value="Legacy Mango">Legacy Mango</option>
+        <option value="Custom Project">Custom Project</option>
+      </select>
+      <textarea name="message" placeholder="Tell us a bit about your brand or goals..." rows="5"></textarea>
+      <button type="submit">Submit Booking</button>
+    </form>
+
+    <div class="nav-links">
+      <a href="index.html">← Home</a>
+      <a href="pricing.html#pricing">View Packages</a>
+      <a href="discovery-call.html">Quick Discovery Call</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Kadijah’s Mango • A Halal-First Branding & Distribution Agency
+  </footer>
+
+</body>
+</html>
