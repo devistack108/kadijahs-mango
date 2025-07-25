@@ -9,98 +9,113 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background-color: #fffaf4;
-      color: #1c1c1c;
+      background-color: #ffffff;
+      color: #1a1a1a;
     }
 
     .hero {
-      background: linear-gradient(135deg, #8b0000, #660000);
-      color: #fff;
-      text-align: center;
       padding: 100px 20px 80px;
-      position: relative;
+      text-align: center;
     }
 
     .hero img {
       width: 110px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
     .hero h1 {
-      font-size: 2.8rem;
-      margin-bottom: 10px;
+      font-size: 3rem;
+      font-weight: 600;
+      margin: 0;
+      color: #111;
     }
 
     .hero p {
       font-size: 1.2rem;
-      margin-bottom: 35px;
+      margin-top: 20px;
+      color: #444;
       max-width: 600px;
       margin-left: auto;
       margin-right: auto;
     }
 
     .cta-button {
-      background-color: #ffd700;
-      color: #8b0000;
-      padding: 14px 30px;
-      border-radius: 6px;
+      display: inline-block;
+      margin-top: 35px;
+      background-color: #880e1f; /* Soft deep red */
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-weight: 600;
       font-size: 1rem;
-      font-weight: bold;
       text-decoration: none;
-      transition: background 0.3s ease;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
     }
 
     .cta-button:hover {
-      background-color: #ffcc00;
+      background-color: #a1182d;
     }
 
     .section {
       text-align: center;
-      padding: 60px 20px;
+      padding: 70px 20px;
+      background-color: #f9f9f9;
     }
 
     .section h2 {
-      font-size: 2rem;
-      color: #8b0000;
-      margin-bottom: 15px;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: #222;
     }
 
     .section p {
       font-size: 1.1rem;
-      max-width: 750px;
-      margin: 0 auto 40px;
-      color: #333;
+      color: #555;
+      max-width: 720px;
+      margin: 0 auto 50px;
     }
 
     .highlights {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 40px;
+      gap: 30px;
     }
 
     .highlight-box {
+      background-color: #fff;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      padding: 30px 20px;
       flex: 1 1 260px;
-      max-width: 280px;
-      padding: 25px;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      background: #fff;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+      max-width: 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .highlight-box:hover {
+      transform: translateY(-5px);
     }
 
     .highlight-box h3 {
-      color: #8b0000;
-      font-size: 1.2rem;
-      margin-bottom: 10px;
+      color: #880e1f;
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+    }
+
+    .highlight-box p {
+      font-size: 1rem;
+      color: #555;
     }
 
     .footer {
-      text-align: center;
+      background-color: #ffffff;
+      color: #666;
+      font-size: 0.95rem;
       padding: 40px 20px;
-      background-color: #f8f1e9;
-      font-size: 0.9rem;
-      color: #444;
+      text-align: center;
+      border-top: 1px solid #eee;
     }
   </style>
 </head>
@@ -110,34 +125,35 @@
   <section class="hero">
     <img src="YOUR_LOGO_URL_HERE" alt="Kadijah's Mango Logo" />
     <h1>Kadijah’s Mango</h1>
-    <p>Built to Serve. Designed to Scale.<br> Premium halal branding, packaging, and distribution support.</p>
+    <p>Built to Serve. Designed to Scale.<br>
+       Elegant halal branding & global launch solutions for ethical businesses.</p>
     <a href="pricing.html" class="cta-button">Explore Our Packages</a>
   </section>
 
-  <!-- Services Summary -->
+  <!-- Services Overview -->
   <section class="section">
-    <h2>What We Do</h2>
-    <p>We help halal-conscious entrepreneurs, global exporters, and modest product brands launch with elegance, trust, and global readiness.</p>
+    <h2>What We Offer</h2>
+    <p>Global market entry, clean brand identity, and halal-ready compliance — tailored for your vision, powered by values.</p>
 
     <div class="highlights">
       <div class="highlight-box">
-        <h3>Faith-Driven Branding</h3>
-        <p>Design rooted in halal values, with premium visuals that build trust and retail appeal.</p>
+        <h3>Branding with Integrity</h3>
+        <p>Professional design rooted in Islamic values, ready for retail & investors.</p>
       </div>
       <div class="highlight-box">
-        <h3>Halal Compliance Prep</h3>
-        <p>Packaging, labeling, ingredient support + distributor-introduction readiness.</p>
+        <h3>Packaging & Compliance</h3>
+        <p>Label support, halal certifier coordination, and packaging system design.</p>
       </div>
       <div class="highlight-box">
-        <h3>Global Market Access</h3>
-        <p>We help you reach U.S., GCC, and EU halal buyers with ready-to-showcase tools.</p>
+        <h3>Distribution Readiness</h3>
+        <p>Sales sheets, expos, and buyer-ready tools for the U.S., GCC & beyond.</p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    &copy; 2025 Kadijah’s Mango • Halal-First, Global-Ready • WhatsApp: +1 407-319-6740
+    &copy; 2025 Kadijah’s Mango | A Halal-First Branding Agency • WhatsApp: +1 407-319-6740
   </footer>
 
 </body>
