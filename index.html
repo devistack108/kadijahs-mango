@@ -6,6 +6,9 @@
   <title>Kadijah’s Mango – Halal Branding & Distribution</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
@@ -42,7 +45,7 @@
     .cta-button {
       display: inline-block;
       margin-top: 35px;
-      background-color: #880e1f; /* Soft deep red */
+      background-color: #880e1f;
       color: #fff;
       padding: 14px 28px;
       border-radius: 8px;
@@ -117,13 +120,36 @@
       text-align: center;
       border-top: 1px solid #eee;
     }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .cta-button {
+        font-size: 0.95rem;
+        padding: 12px 22px;
+      }
+
+      .section h2 {
+        font-size: 1.7rem;
+      }
+
+      .section p {
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
 
   <!-- Hero -->
   <section class="hero">
-    <img src="https://devistack108.github.io/kadijahs-mango/assets/kadijah-logo.png/>
+    <img src="https://devistack108.github.io/kadijahs-mango/assets/kadijah-logo.png" alt="Kadijah’s Mango Logo">
     <h1>Kadijah’s Mango</h1>
     <p>Built to Serve. Designed to Scale.<br>
        Elegant halal branding & global launch solutions for ethical businesses.</p>
