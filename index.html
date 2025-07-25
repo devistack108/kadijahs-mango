@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kadijah's Mango – Halal Branding & Global Distribution</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Kadijah’s Mango | Halal Branding, Compliance & Distribution Services" />
+  <title>Kadijah’s Mango – Global Halal Branding & Distribution</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
   <style>
     * {
       box-sizing: border-box;
@@ -13,49 +13,69 @@
 
     body {
       margin: 0;
-      font-family: 'DM Sans', sans-serif;
-      color: #111;
-      background-color: #ffffff;
-      line-height: 1.6;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fdfdfb;
+      color: #222;
     }
 
-    header {
-      background: linear-gradient(to bottom right, #fff6f4, #fcebe4);
-      padding: 60px 20px 40px;
+    header.hero {
+      background-color: #8b0000;
+      color: #fff;
       text-align: center;
+      padding: 80px 20px 50px;
+      position: relative;
     }
 
-    header img {
-      width: 120px;
+    header.hero img {
+      width: 130px;
       margin-bottom: 20px;
     }
 
-    header h1 {
-      font-size: 2.8rem;
-      font-weight: 600;
-      margin: 0;
+    header.hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
     }
 
-    header p {
-      font-size: 1.2rem;
-      color: #444;
+    header.hero p {
+      font-size: 1.15rem;
+      margin-bottom: 30px;
       max-width: 700px;
-      margin: 15px auto 30px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .cta-button {
-      background-color: #8b0000;
-      color: white;
+      background-color: #ffd700;
+      color: #8b0000;
       padding: 14px 28px;
       border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
       font-size: 1rem;
-      transition: background 0.3s ease;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
     }
 
     .cta-button:hover {
-      background-color: #a31a1a;
+      background-color: #e0c200;
+    }
+
+    nav.links {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    nav.links a {
+      margin-left: 20px;
+      color: #ffd700;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    nav.links a:hover {
+      text-decoration: underline;
     }
 
     .section {
@@ -64,15 +84,16 @@
     }
 
     .section h2 {
-      font-size: 2.2rem;
+      font-size: 2.3rem;
+      color: #8b0000;
       margin-bottom: 20px;
     }
 
     .section p {
-      max-width: 720px;
-      margin: 0 auto 40px;
-      color: #555;
       font-size: 1.1rem;
+      max-width: 720px;
+      margin: 0 auto 50px;
+      color: #444;
     }
 
     .grid {
@@ -83,11 +104,12 @@
     }
 
     .card {
-      background-color: white;
-      border-radius: 16px;
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.05);
       padding: 30px 20px;
-      transition: all 0.3s ease;
+      border: 1px solid #eee;
+      transition: transform 0.3s ease;
     }
 
     .card:hover {
@@ -95,91 +117,45 @@
     }
 
     .card h3 {
-      color: #8b0000;
-      font-size: 1.3rem;
-      margin-bottom: 15px;
+      color: #b32d00;
+      font-size: 1.25rem;
+      margin-bottom: 12px;
     }
 
     footer {
       background-color: #fff9f9;
       border-top: 1px solid #eee;
       padding: 40px 20px;
-      font-size: 0.95rem;
       text-align: center;
+      font-size: 0.95rem;
       color: #555;
     }
 
-    .nav-links {
-      margin-top: 20px;
-    }
-
-    .nav-links a {
-      margin: 0 12px;
+    .footer-nav a {
+      margin: 0 15px;
       color: #8b0000;
       text-decoration: none;
       font-weight: 600;
     }
 
-    .nav-links a:hover {
+    .footer-nav a:hover {
       text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header.hero h1 {
+        font-size: 2rem;
+      }
+
+      nav.links {
+        position: static;
+        margin-top: 10px;
+      }
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <img src="./assets/kadijahs_mango_logo_optimized_transparent (1).png" alt="Kadijah's Mango Logo">
-    <h1>Kadijah’s Mango</h1>
-    <p>Built to Serve. Designed to Scale. The premium halal-first branding & distribution agency trusted by global startups and exporters.</p>
-    <a href="pricing.html" class="cta-button">View Packages</a>
-  </header>
 
-  <section class="section">
-    <h2>Our Core Services</h2>
-    <p>We help halal-certified and ethical brands gain shelf space, investor appeal, and international credibility through brand design, compliance, and launch support.</p>
-    <div class="grid">
-      <div class="card">
-        <h3>Brand Identity & Strategy</h3>
-        <p>Modern visual systems tailored to halal markets, investors, and international buyers.</p>
-      </div>
-      <div class="card">
-        <h3>Packaging & Halal Compliance</h3>
-        <p>Packaging systems, certification coordination, and export documentation support.</p>
-      </div>
-      <div class="card">
-        <h3>Distribution & Exposure</h3>
-        <p>Sales kits, expo representation, distributor access and media content — all done for you.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Why Choose Us?</h2>
-    <p>We combine global design standards with Islamic business ethics, offering a rare blend of luxury, authenticity, and strategic halal alignment.</p>
-    <div class="grid">
-      <div class="card">
-        <h3>100% Halal-Focused</h3>
-        <p>Every brand and message is reviewed for halal compliance and values integrity.</p>
-      </div>
-      <div class="card">
-        <h3>Multilingual Communication</h3>
-        <p>We speak English, Arabic, and French — so your brand never gets lost in translation.</p>
-      </div>
-      <div class="card">
-        <h3>Global Vision</h3>
-        <p>We’ve supported startups in the U.S., Morocco, Malaysia, UAE, and beyond.</p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 Kadijah’s Mango • WhatsApp: +1 407-319-6740 • <a href="mailto:narinedevirn@gmail.com">Email Us</a>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="pricing.html">Packages</a>
-      <a href="#">Book a Call</a>
-    </div>
-  </footer>
-</body>
-
-</html>
+  <!-- ✅ HEADER -->
+  <header class="hero">
+    <img src="assets/kadijahs_mango_logo_optimized_transparent (1).png" alt="Kadijah’s Mang
