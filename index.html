@@ -1,39 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Kadijah’s Mango | Halal Branding & Product Launch Packages">
-  <title>Kadijah’s Mango – Halal Brand Packages</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kadijah’s Mango | Halal Branding, Compliance & Distribution Services" />
+  <title>Kadijah’s Mango – Halal Branding & Packages</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
       background-color: #fdfdfb;
       color: #222;
     }
+
+    header.hero {
+      background-color: #8b0000;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px 60px;
+    }
+
+    header.hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header.hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .cta-button {
+      background-color: #ffd700;
+      color: #8b0000;
+      padding: 14px 30px;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #e0c200;
+    }
+
+    .icons {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .icons div {
+      background: #fff;
+      color: #8b0000;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
     .container {
       max-width: 1100px;
       margin: auto;
       padding: 60px 20px;
     }
+
+    .pricing-section {
+      padding-top: 40px;
+    }
+
     .pricing-section h2 {
       text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 40px;
+      font-size: 2.3rem;
+      margin-bottom: 20px;
+      color: #8b0000;
     }
+
     .pricing-section p.description {
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       max-width: 800px;
-      margin: 0 auto 60px auto;
+      margin: 0 auto 50px;
     }
+
     .pricing-grid {
       display: grid;
-      gap: 40px;
+      gap: 30px;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
+
     .package {
       background: #fff;
       border: 1px solid #e0e0e0;
@@ -41,19 +106,23 @@
       border-radius: 12px;
       box-shadow: 0 8px 18px rgba(0,0,0,0.05);
     }
+
     .package h3 {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       color: #b32d00;
       margin-bottom: 10px;
     }
+
     .package ul {
       list-style: none;
       padding-left: 0;
     }
+
     .package ul li {
       margin-bottom: 10px;
       line-height: 1.6;
     }
+
     .package a {
       display: block;
       margin-top: 20px;
@@ -65,87 +134,48 @@
       text-decoration: none;
       font-weight: 600;
     }
+
     .footer-note {
       text-align: center;
-      margin-top: 60px;
+      margin-top: 50px;
       font-size: 1rem;
       color: #555;
     }
+
+    @media (max-width: 600px) {
+      header.hero h1 {
+        font-size: 2rem;
+      }
+
+      header.hero p {
+        font-size: 1rem;
+      }
+
+      .icons div {
+        margin-bottom: 10px;
+      }
+    }
   </style>
 </head>
-  
 <body>
-  <body>
 
-<!-- ✅ START OF HOMEPAGE CODE -->
-<header class="hero">
-  <style>
-    .hero {
-      background-color: #8b0000;
-      color: #fff;
-      text-align: center;
-      padding: 100px 20px 60px;
-    }
-    .hero h1 {
-      font-size: 2.8rem;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 1.3rem;
-      margin-bottom: 25px;
-    }
-    .cta-button {
-      background-color: #ffd700;
-      color: #8b0000;
-      padding: 14px 28px;
-      font-size: 1rem;
-      font-weight: bold;
-      border-radius: 6px;
-      text-decoration: none;
-      display: inline-block;
-      transition: background-color 0.3s ease;
-    }
-    .cta-button:hover {
-      background-color: #e0c200;
-    }
-    .icons {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      margin-top: 40px;
-      flex-wrap: wrap;
-    }
-    .icons div {
-      background: #fff;
-      color: #8b0000;
-      padding: 12px 20px;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 1rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-  </style>
+  <!-- ✅ HOMEPAGE SECTION -->
+  <header class="hero">
+    <h1>Built to Serve, Designed to Scale</h1>
+    <p>100% Halal-Focused Marketing, Media & Distribution</p>
+    <a href="#pricing" class="cta-button">View Our Packages</a>
+    <div class="icons">
+      <div>🖌️ Branding</div>
+      <div>📦 Compliance</div>
+      <div>🌍 Distribution</div>
+    </div>
+  </header>
 
-  <h1>Built to Serve, Designed to Scale</h1>
-  <p>100% Halal-Focused Marketing, Media & Distribution</p>
-  <a href="#pricing" class="cta-button">View Our Packages</a>
-
-  <div class="icons">
-    <div>🖌️ Branding</div>
-    <div>📦 Compliance</div>
-    <div>🌍 Distribution</div>
-  </div>
-</header>
-<!-- ✅ END OF HOMEPAGE CODE -->
-
-<section class="pricing-section" id="pricing">
-
-  <section class="pricing-section">
+  <!-- ✅ PRICING SECTION -->
+  <section class="pricing-section" id="pricing">
     <div class="container">
       <h2>Kadijah’s Mango – Packages & Pricing</h2>
-      <p class="description">
-        We don’t just design — we help you launch, grow, and lead with integrity. Every package is crafted for halal brands ready to scale beautifully.
-      </p>
+      <p class="description">We don’t just design — we help you launch, grow, and lead with integrity. Every package is crafted for halal brands ready to scale beautifully.</p>
 
       <div class="pricing-grid">
         <!-- Start-Up Mango -->
@@ -214,10 +244,9 @@
         </div>
       </div>
 
-      <p class="footer-note">
-        💳 Flexible payment plans available | 🧕🏽 Muslim woman-led | 🌍 Halal-first, globally ready
-      </p>
+      <p class="footer-note">💳 Flexible payment plans available | 🧕🏽 Muslim woman-led | 🌍 Halal-first, globally ready</p>
     </div>
   </section>
+
 </body>
 </html>
