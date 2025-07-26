@@ -2,50 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Book a Consultation – Kadijah’s Mango</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=DM+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Call | Kadijah’s Mango</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; }
-
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: 'DM Sans', sans-serif;
-      background: linear-gradient(to bottom right, #fffaf7, #fef3e9);
-      color: #1a1a1a;
+      padding: 0;
     }
-
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #fffdfa, #f8f4f0);
+      color: #222;
+    }
     header {
-      background: linear-gradient(to right, #8b0000, #330000);
+      background: linear-gradient(135deg, #8b0000, #330000);
       color: white;
-      padding: 50px 20px 30px;
+      padding: 60px 20px 100px;
       text-align: center;
       position: relative;
     }
-
     header img {
-      width: 150px;
-      margin-bottom: 10px;
+      width: 160px;
+      margin-bottom: 20px;
     }
-
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
-      margin: 10px 0 0;
+      font-size: 3rem;
+      margin-bottom: 12px;
     }
-
     header p {
-      font-size: 1.1rem;
-      color: #f8d7d7;
-      margin-top: 10px;
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
     }
-
     nav {
       position: absolute;
       top: 20px;
       right: 30px;
     }
-
     nav a {
       color: #ffd700;
       margin-left: 20px;
@@ -53,135 +50,123 @@
       font-weight: 600;
       font-size: 0.95rem;
     }
-
     nav a:hover {
       text-decoration: underline;
     }
-
-    .container {
-      max-width: 700px;
-      margin: 50px auto;
-      background: white;
-      border-radius: 20px;
-      padding: 40px 30px;
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    input, textarea, select {
-      padding: 14px;
-      font-size: 1rem;
-      border-radius: 10px;
-      border: 1px solid #ddd;
-      font-family: 'DM Sans', sans-serif;
-    }
-
-    textarea {
-      resize: vertical;
-    }
-
-    button {
-      background-color: #8b0000;
-      color: white;
-      border: none;
-      padding: 16px;
-      font-size: 1rem;
-      border-radius: 10px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #a31e1e;
-    }
-
-    .nav-links {
-      margin-top: 30px;
+    section {
+      padding: 60px 20px;
       text-align: center;
     }
-
-    .nav-links a {
-      margin: 0 14px;
-      text-decoration: none;
-      font-weight: 600;
+    section h2 {
+      font-size: 2.4rem;
+      font-family: 'Playfair Display', serif;
       color: #8b0000;
+      margin-bottom: 20px;
     }
-
-    .nav-links a:hover {
-      text-decoration: underline;
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
     }
-
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 600;
+      text-align: left;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+    }
+    button {
+      background: #8b0000;
+      color: white;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    button:hover {
+      background: #a80000;
+    }
     footer {
+      background: #fff5f5;
+      padding: 40px 20px;
+      border-top: 1px solid #eee;
       text-align: center;
-      padding: 50px 20px;
       color: #777;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
     }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      nav {
-        position: static;
-        margin-top: 15px;
-      }
+    .footer-nav a {
+      margin: 0 15px;
+      color: #8b0000;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .footer-nav a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="assets/kadijahs_mango_logo_optimized_transparent (1).png" alt="Kadijah’s Mango Logo" />
+    <img src="assets/kadijahs_mango_logo_optimized_transparent (1).png" alt="Kadijah’s Mango Logo">
     <nav>
       <a href="index.html">Home</a>
-      <a href="pricing.html">Packages</a>
-      <a href="booking.html">Book a Call</a>
+      <a href="pricing.html#pricing">Packages</a>
+      <a href="event-services.html">Event Services</a>
     </nav>
-    <h1>Book a Consultation</h1>
-    <p>Let’s take your halal brand to the global market.</p>
+    <h1>Book a Call</h1>
+    <p>Let’s connect and explore how Kadijah’s Mango can support your halal brand, project, or expansion plan. We’re ready to serve.</p>
   </header>
 
-  <div class="container">
-    <form name="booking" method="POST" data-netlify="true">
-      <input type="text" name="name" placeholder="Full Name" required />
-      <input type="email" name="email" placeholder="Email Address" required />
-      <input type="text" name="phone" placeholder="WhatsApp / Phone Number" required />
-      <select name="interest" required>
-        <option value="">I'm interested in...</option>
-        <option value="Start-Up Mango">Start-Up Mango</option>
-        <option value="Signature Mango">Signature Mango</option>
-        <option value="Premium Mango">Premium Mango</option>
-        <option value="Legacy Mango">Legacy Mango</option>
-        <option value="Custom Project">Custom Project</option>
-      </select>
-      <textarea name="message" placeholder="Tell us a bit about your brand or goals..." rows="5"></textarea>
-      <button type="submit">Submit Booking</button>
-    </form>
+  <section>
+    <h2>Consultation Request Form</h2>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
 
-    <div class="nav-links">
-      <a href="index.html">← Home</a>
-      <a href="pricing.html#pricing">View Packages</a>
-      <a href="discovery-call.html">Quick Discovery Call</a>
-    </div>
-  </div>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="service">Service of Interest</label>
+      <select id="service" name="service" required>
+        <option value="">-- Please Choose --</option>
+        <option value="lite">Monthly Retainer – Lite Support</option>
+        <option value="growth">Monthly Retainer – Active Growth</option>
+        <option value="full">Monthly Retainer – Full-Service Entry</option>
+        <option value="expo">Expo Presence – Essential</option>
+        <option value="premium">Expo Presence – Premium</option>
+        <option value="photography">Add-On – Product Photography</option>
+        <option value="banner">Add-On – Banner/Signage</option>
+        <option value="press">Add-On – Press Kit + PR</option>
+        <option value="video">Add-On – Product Teaser Video</option>
+      </select>
+
+      <label for="message">Tell us more about your goals:</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+
+      <button type="submit">Submit Request</button>
+    </form>
+  </section>
 
   <footer>
-    &copy; 2025 Kadijah’s Mango • A Halal-First Branding & Distribution Agency
+    &copy; 2025 Kadijah’s Mango • WhatsApp: +1 407-319-6740 • <a href="mailto:narinedevirn@gmail.com">Email Us</a>
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="pricing.html#pricing">Packages</a>
+      <a href="event-services.html">Event Services</a>
+    </div>
   </footer>
-
 </body>
 </html>
-
-
-
-
-
-
