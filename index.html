@@ -18,75 +18,67 @@
       color: #222;
     }
 
-    /* HEADER */
-    .hero-header {
-      background: url('7dad8232-f6e5-42cb-9c15-d0d5963ecdc9.png') center/cover no-repeat;
-      height: 606px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+    header {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                  url('kadijahs_logo.png') center/contain no-repeat;
+      background-color: #330000;
+      background-blend-mode: darken;
       color: white;
+      padding: 120px 20px 140px;
+      text-align: center;
+      position: relative;
     }
 
-    .hero-overlay {
-      background-color: rgba(0, 0, 0, 0.55);
-      padding: 40px 30px;
-      border-radius: 16px;
-      max-width: 850px;
-      margin: 0 auto;
-    }
-
-    .hero-header h1 {
+    header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      color: #ffd700;
-      margin-bottom: 16px;
+      font-size: 3.2rem;
+      margin-bottom: 12px;
+      color: #f4b942;
     }
 
-    .hero-header p {
+    header p {
       font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
       line-height: 1.6;
       color: #fff;
-      margin-bottom: 30px;
     }
 
     .cta-button {
-      background: #ffd700;
-      color: #8b0000;
+      background: #f4b942;
+      color: #3b1f00;
       padding: 14px 32px;
       border: none;
       border-radius: 40px;
       font-size: 1rem;
       font-weight: bold;
+      cursor: pointer;
       text-decoration: none;
       transition: 0.3s ease;
     }
 
     .cta-button:hover {
-      background: #f6c700;
+      background: #e6a531;
     }
 
-    .hero-header nav {
+    nav {
       position: absolute;
       top: 20px;
       right: 30px;
     }
 
-    .hero-header nav a {
-      color: #ffd700;
+    nav a {
+      color: #f4b942;
       margin-left: 20px;
       text-decoration: none;
       font-weight: 600;
       font-size: 0.95rem;
     }
 
-    .hero-header nav a:hover {
+    nav a:hover {
       text-decoration: underline;
     }
 
-    /* SECTIONS */
     section {
       padding: 80px 20px;
       text-align: center;
@@ -131,7 +123,6 @@
       margin-bottom: 10px;
     }
 
-    /* FOOTER */
     footer {
       background: #fff5f5;
       padding: 40px 20px;
@@ -155,8 +146,7 @@
 </head>
 
 <body>
-  <!-- HEADER -->
-  <header class="hero-header">
+  <header>
     <nav>
       <a href="index.html">Home</a>
       <a href="pricing.html#pricing">Packages</a>
@@ -164,15 +154,11 @@
       <a href="event-services.html">Event Services</a>
       <a href="discovery-call.html">Discovery Call</a>
     </nav>
-    <div class="hero-overlay">
-      <h1>Kadijah’s Mango</h1>
-      <p>World-class U.S.–International Halal Branding & Distribution.<br>
-      Excellence rooted in faith. From Morocco to Malaysia, from your vision to the shelves.</p>
-      <a href="pricing.html#pricing" class="cta-button">Explore Packages</a>
-    </div>
+    <h1>Kadijah’s Mango</h1>
+    <p>World-class U.S.–International Halal Branding & Distribution. Excellence rooted in faith. Loved by global startups, exporters & investors. From Morocco to Malaysia. From your vision to the shelves.</p>
+    <a href="pricing.html#pricing" class="cta-button">Explore Packages</a>
   </header>
 
-  <!-- SERVICES SECTION -->
   <section>
     <h2>Our Signature Services</h2>
     <p>We craft globally appealing, halal-compliant brands with elite packaging, certification, media, and distribution — all built to meet international expectations with cultural respect.</p>
@@ -192,7 +178,6 @@
     </div>
   </section>
 
-  <!-- TRUST SECTION -->
   <section style="background: #fdf7f0;">
     <h2>Why the World Trusts Us</h2>
     <p>We serve as the global halal bridge. Blending Islamic ethics with luxury design. Trusted by brands entering the U.S., Middle East, Europe & beyond.</p>
@@ -212,7 +197,6 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     &copy; 2025 Kadijah’s Mango • WhatsApp: +1 407-319-6740 • <a href="mailto:narinedevirn@gmail.com">Email Us</a>
     <div class="footer-nav">
