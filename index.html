@@ -11,33 +11,55 @@
       margin: 0;
       padding: 0;
     }
+
     body {
       font-family: 'Poppins', sans-serif;
       background: linear-gradient(to bottom right, #fffdfa, #f8f4f0);
       color: #222;
     }
+
     header {
-      background: linear-gradient(135deg, #8b0000, #330000);
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+                  url('kadijahs_logo.png') center/cover no-repeat;
       color: white;
-      padding: 60px 20px 100px;
+      padding: 120px 20px 140px;
       text-align: center;
       position: relative;
+      background-blend-mode: darken;
     }
-    header img {
-      width: 160px;
-      margin-bottom: 20px;
+
+    nav {
+      position: absolute;
+      top: 20px;
+      right: 30px;
     }
+
+    nav a {
+      color: #ffd700;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     header h1 {
       font-family: 'Playfair Display', serif;
       font-size: 3.2rem;
       margin-bottom: 12px;
+      color: #ffd700;
     }
+
     header p {
       font-size: 1.25rem;
       max-width: 700px;
       margin: 0 auto 30px;
       line-height: 1.6;
     }
+
     .cta-button {
       background: #ffd700;
       color: #8b0000;
@@ -50,46 +72,37 @@
       text-decoration: none;
       transition: 0.3s ease;
     }
+
     .cta-button:hover {
       background: #f6c700;
     }
-    nav {
-      position: absolute;
-      top: 20px;
-      right: 30px;
-    }
-    nav a {
-      color: #ffd700;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.95rem;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
+
     section {
       padding: 80px 20px;
       text-align: center;
     }
+
     section h2 {
       font-size: 2.6rem;
       font-family: 'Playfair Display', serif;
       color: #8b0000;
       margin-bottom: 20px;
     }
+
     section p {
       max-width: 760px;
       margin: 0 auto 50px;
       font-size: 1.15rem;
       color: #555;
     }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
       padding: 0 20px;
     }
+
     .card {
       background: white;
       padding: 30px 20px;
@@ -97,14 +110,17 @@
       box-shadow: 0 12px 24px rgba(0, 0, 0, 0.07);
       transition: 0.3s ease;
     }
+
     .card:hover {
       transform: translateY(-6px);
     }
+
     .card h3 {
       font-size: 1.3rem;
       color: #8b0000;
       margin-bottom: 10px;
     }
+
     footer {
       background: #fff5f5;
       padding: 40px 20px;
@@ -113,20 +129,22 @@
       color: #777;
       font-size: 0.9rem;
     }
+
     .footer-nav a {
       margin: 0 15px;
       color: #8b0000;
       font-weight: 600;
       text-decoration: none;
     }
+
     .footer-nav a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
+
 <body>
   <header>
-    <img src="kadijahs_logo.png" alt="Kadijah’s Mango Logo">
     <nav>
       <a href="index.html">Home</a>
       <a href="pricing.html#pricing">Packages</a>
@@ -135,7 +153,7 @@
       <a href="discovery-call.html">Discovery Call</a>
     </nav>
     <h1>Kadijah’s Mango</h1>
-    <p>World-class U.S. - International Halal Branding & Distribution. Excellence rooted in faith. Loved by global startups, exporters & investors. From Morocco to Malaysia. From your vision to the shelves.</p>
+    <p>World-class U.S.–International Halal Branding & Distribution. Excellence rooted in faith. From Morocco to Malaysia, from your vision to the shelves.</p>
     <a href="pricing.html#pricing" class="cta-button">Explore Packages</a>
   </header>
 
